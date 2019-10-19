@@ -1,0 +1,24 @@
+import java.util.*;
+public class Batter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int[] array = new int[num];
+		for(int i = 0; i < num; i++) {
+			array[i] = sc.nextInt();
+		}
+		int total = 0;
+		int num1 = 0;
+		for(int i = 0; i < num; i++) {
+			if(array[i] != -1) {
+				total += array[i];
+				num1++;
+				
+			}
+		}
+		System.out.println((double)((double)total/num1));
+	}
+
+}
