@@ -9,7 +9,9 @@ public class Heir {
 		int[] array1 = method(Integer.toString(a));
 		int[] array2 = method(Integer.toString(b));
 		ArrayList<Integer> alist1 = new ArrayList<Integer>();
-		alist1 = Arrays.asArrayList(array1);
+		for(int k: array1) {
+			alist1.add(k);
+		}
 		
 		
 		for(int i = 0; i < 10; i++) {
