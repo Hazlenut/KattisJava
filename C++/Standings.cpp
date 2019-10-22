@@ -9,9 +9,9 @@ int main()
 {
     int q;
     scanf("%d", &q);
+    char name[20];
     for(int i = 0; i < q; i++) {
         int n,g;
-        string name;
         scanf("%d",&n);
         vector<int> res;
         for(int c = 0; c < n; c++) {
@@ -23,7 +23,7 @@ int main()
             for(int t = 0; t < res.size(); t++) {
                 total += (abs(res[t] - (t+1)));
             }
-            cout << total;
+            cout << total << "\n";
         }
 }
 
