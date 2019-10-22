@@ -23,11 +23,16 @@ public class Touchdown {
 			//System.out.println("total " + total);
 			//System.out.println("down " + down);
 			//System.out.println(down + " down and " + (total-initial) + " yards");
+			if(total-initial<= -20) {
+				safety = true;
+				break;
+			}
 			if(down == 4 && total-initial <= 20) {
 				touchdown = false;
 				//System.out.println("failed");
 				break;
 			}
+			
 			if(total-initial >= 20) {
 				down = 1;
 				move = initial;
@@ -39,10 +44,7 @@ public class Touchdown {
 				safety = true;
 				break;
 			}
-			if(initial-20 <= total) {
-				safety = true;
-				break;
-			}
+			
 			if(total >= 80) {
 				break;
 			}
