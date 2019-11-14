@@ -23,9 +23,6 @@ public class Standings {
 					}
 				}
 			}
-			for(int u: array) {
-				System.out.println("here " + u);
-			}
 			int total = 0;
 			for(int k = 0; k < array.length; k++) {
 				total+= (Math.abs(array[k] - (k+1)));
