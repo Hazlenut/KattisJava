@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/jewels-and-stones/submissions/
 import java.util.*;
-class Solution {
+public class JewelsAndStones {
     public int numJewelsInStones(String J, String S) {
         int j = 0;
         List<Character> list = new ArrayList<Character>();

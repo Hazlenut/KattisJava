@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/maximum-69-number/
-class Solution {
+public class Max69Number {
     public int maximum69Number (int num) {
         String s = Integer.toString(num);
         int index = -1;

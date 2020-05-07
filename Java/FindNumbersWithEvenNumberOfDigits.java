@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
-class Solution {
+public class FindNumbersWithEvenNumberOfDigits {
     public int findNumbers(int[] nums) {
         int count = 0;
         for(int i: nums) {
